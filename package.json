@@ -1,0 +1,14 @@
+{
+  "name": "horoscope-survey-mockup",
+  "version": "1.0.0",
+  "description": "Practice building a basic survey form with javascript functions",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tamer Mahmoud",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horoscope Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://use.fontawesome.com/a383e7c9f6.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1 id="title">Horoscope Survey Form</h1>
+        <p id="description">Utilize the power of astronomy to discover who you are...!</p>
+      </header>
+      <main>
+        <form action="#" id="survey-form">
+          <div class="form-control">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" name="name" id="name" placeholder="your name" required />
+          </div>
+          <div class="form-control">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="your email" required />
+          </div>
+
+          <div class="form-control">
+            <label for="birth">Birth Date: </label>
+            <input type="date" name="birth" id="birth" placeholder="your birthdate" required />
+          </div>
+
+          <div id="age" class="form-control">
+            <div class="age">
+              <label for="age" id="number-label">Age: </label>
+              <input type="number" name="age" id="number" min="18" max="99" placeholder="18" required readonly />
+            </div>
+            <div class="zodaic"><div id="zodaic">Zodaic Title</div></div>
+          </div>
+
+          <div class="form-control">
+            <label for="dropdown">Filter Options:</label>
+            <select name="dropdown" id="dropdown">
+              <option value="select one">Select one</option>
+              <option value="planet">Planet</option>
+              <option value="elements">Elements</option>
+              <option value="chinese">Chinese</option>
+            </select>
+          </div>
+
+          <div id="filterZodaics">
+            <div class="form-control" id="planets">
+              <h3>Filter Planets</h3>
+              <div>
+                <input class="hidden" id="sun" type="checkbox" value="sun" name="planets" />
+                <label class="cbx" for="sun"></label>
+                <label class="lbl" for="sun">Sun</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="mercury" type="checkbox" value="mercury" name="planets" />
+                <label class="cbx" for="mercury"></label>
+                <label class="lbl" for="mercury">Mercury</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="venus" type="checkbox" value="venus" name="planets" />
+                <label class="cbx" for="venus"></label>
+                <label class="lbl" for="venus">Venus</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="earth" type="checkbox" value="earth" name="planets" />
+                <label class="cbx" for="earth"></label>
+                <label class="lbl" for="earth">Earth</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="moon" type="checkbox" value="moon" name="planets" />
+                <label class="cbx" for="moon"></label>
+                <label class="lbl" for="moon">Moon</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="mars" type="checkbox" value="mars" name="planets" />
+                <label class="cbx" for="mars"></label>
+                <label class="lbl" for="mars">Mars</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="jupiter" type="checkbox" value="jupiter" name="planets" />
+                <label class="cbx" for="jupiter"></label>
+                <label class="lbl" for="jupiter">Jupiter</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="saturn" type="checkbox" value="saturn" name="planets" />
+                <label class="cbx" for="saturn"></label>
+                <label class="lbl" for="saturn">Saturn</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="neptuno" type="checkbox" value="neptuno" name="planets" />
+                <label class="cbx" for="neptuno"></label>
+                <label class="lbl" for="neptuno">Neptuno</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="uranus" type="checkbox" value="uranus" name="planets" />
+                <label class="cbx" for="uranus"></label>
+                <label class="lbl" for="uranus">Uranus</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="pluto" type="checkbox" value="pluto" name="planets" />
+                <label class="cbx" for="pluto"></label>
+                <label class="lbl" for="pluto">Pluto</label>
+              </div>
+            </div>
+
+            <div class="form-control" id="elements">
+              <h3>Filter Elements</h3>
+
+              <div>
+                <input class="hidden" id="air" type="checkbox" value="air" name="elements" />
+                <label class="cbx" for="air"></label>
+                <label class="lbl" for="air">Air</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="fire" type="checkbox" value="fire" name="elements" />
+                <label class="cbx" for="fire"></label>
+                <label class="lbl" for="fire">Fire</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="land" type="checkbox" value="land" name="elements" />
+                <label class="cbx" for="land"></label>
+                <label class="lbl" for="land">Land</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="water" type="checkbox" value="water" name="elements" />
+                <label class="cbx" for="water"></label>
+                <label class="lbl" for="water">Water</label>
+              </div>
+            </div>
+
+            <div class="form-control" id="chinese">
+              <h3>Filter Chinese:</h3>
+
+              <div>
+                <input class="hidden" id="dragon" type="checkbox" value="dragon" name="chinese" />
+                <label class="cbx" for="dragon"></label>
+                <label class="lbl" for="dragon">Dragon</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="snake" type="checkbox" value="snake" name="chinese" />
+                <label class="cbx" for="snake"></label>
+                <label class="lbl" for="snake">Snake</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="horse" type="checkbox" value="horse" name="chinese" />
+                <label class="cbx" for="horse"></label>
+                <label class="lbl" for="horse">Horse</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="goat" type="checkbox" value="goat" name="chinese" />
+                <label class="cbx" for="goat"></label>
+                <label class="lbl" for="goat">Goat</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="monkey" type="checkbox" value="monkey" name="chinese" />
+                <label class="cbx" for="monkey"></label>
+                <label class="lbl" for="monkey">Monkey</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="dog" type="checkbox" value="dog" name="chinese" />
+                <label class="cbx" for="dog"></label>
+                <label class="lbl" for="dog">Dog</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="pig" type="checkbox" value="pig" name="chinese" />
+                <label class="cbx" for="pig"></label>
+                <label class="lbl" for="pig">Pig</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="rat" type="checkbox" value="rat" name="chinese" />
+                <label class="cbx" for="rat"></label>
+                <label class="lbl" for="rat">Rat</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="ox" type="checkbox" value="ox" name="chinese" />
+                <label class="cbx" for="ox"></label>
+                <label class="lbl" for="ox">Ox</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="tiger" type="checkbox" value="tiger" name="chinese" />
+                <label class="cbx" for="tiger"></label>
+                <label class="lbl" for="tiger">Tiger</label>
+              </div>
+
+              <div>
+                <input class="hidden" id="rabbit" type="checkbox" value="rabbit" name="chinese" />
+                <label class="cbx" for="rabbit"></label>
+                <label class="lbl" for="rabbit">Rabbit</label>
+              </div>
+            </div>
+          </div>
+
+          <div id="zodaicSigns" class="form-control">
+            <div class="mars pluto fire dragon">
+              <input type="radio" name="zodaics" id="control_01" value="aries" />
+              <label for="control_01">
+                <h2>Aries <span class="zTitle">The Ram</span></h2>
+                <h3>(Mar 21-Apr 19)</h3>
+                <img src="https://numeroly.com/wp-content/uploads/2020/05/Aries55.gif" alt="" />
+                <p>
+                  The pioneer and trailblazer of the horoscope wheel, Aries energy helps us initiate, fight for our
+                  beliefs and fearlessly put ourselves out there.
+                </p>
+              </label>
+            </div>
+
+            <div class="venus earth land snake">
+              <input type="radio" name="zodaics" id="control_02" value="tarus" />
+              <label for="control_02">
+                <h2>Taurus <span class="zTitle">The Bull</span></h2>
+                <h3>(Apr 20-May 20)</h3>
+                <img src="https://numeroly.com/wp-content/uploads/2020/05/Taurus55.gif" alt="" />
+                <p>
+                  The persistent provider of the horoscope family, Taurus energy helps us seek security, enjoy earthly
+                  pleasures and get the job done.
+                </p>
+              </label>
+            </div>
+
+            <div class="mercury air horse">
+              <input type="radio" name="zodaics" id="control_03" value="gemini" />
+              <label for="control_03">
+                <h2>Gemini <span class="zTitle">The Twins</span></h2>
+                <h3>(May 21-Jun 20)</h3>
+                <img src="https://numeroly.com/wp-content/uploads/2020/05/Gemini55.gif" alt="" />
+                <p>
+                  The most versatile and vibrant horoscope sign, Gemini energy helps us communicate, collaborate and fly
+                  our freak flags at full mast.
+                </p>
+              </label>
+            </div>
+
+            <div class="moon water goat">
+              <input type="radio" name="zodaics" id="control_04" value="cancer" />
+              <label for="control_04">
+                <h2>Cancer <span class="zTitle">The Crab</span></h2>
+                <h3>(June 21-July 22)</h3>
+                <img src="https://numeroly.com/wp-content/uploads/2020/05/Cancer55.gif" alt="" />
+                <p>
+                  The natural nurturer of the horoscope wheel, Cancer energy helps us connect with our feelings, plant
+                  deep roots and feather our family nests.
+                </p>
+              </label>
+            </div>
+
+            <div class="sun fire monkey">
+              <input type="radio" name="zodaics" id="control_05" value="leo" />
+              <label for="control_05">
+                <h2>Leo <span class="zTitle">The Lion</span></h2>
+                <h3>(July 23-Aug 22)</h3>
+                <img src="https://numeroly.com/wp-content/uploads/2020/05/Leo55.gif" alt="" />
+                <p>
+                  Y The drama queen and regal ruler of the horoscope clan, Leo energy helps us shine, express ourselves
+                  boldly and wear our hearts on our sleeves.
+                </p>
+              </label>
+            </div>
+
+            <div class="mercury land goat">
+              <input type="radio" name="zodaics" id="control_06" value="virgo" />
+              <label for="control_06">
+                <h2>Virgo <span class="zTitle">The Virgin</span></h2>
+                <h3>(Aug 23-Sep 22)</h3>
+                <img src="https://numeroly.com/wp-content/uploads/2020/05/Virgo55.gif" alt="" />
+                <p>
+                  The masterful helper of the horoscope wheel, Virgo energy teaches us to serve, do impeccable work and
+                  prioritize wellbeing—of ourselves, our loved ones and the planet.
+                </p>
+              </label>
+            </div>
+
+            <div class="venus air dog">
+              <input type="radio" name="zodaics" id="control_07" value="libra" />
+              <label for="control_07">
+                <h2>Libra <span class="zTitle">The Scales</span></h2>
+                <h3>(Sep 23-Oct 22)</h3>
+                <img src="https://numeroly.com/wp-content/uploads/2020/05/Libra55.gif" alt="" />
+                <p>
+                  The balanced beautifier of the horoscope family, Libra energy inspires us to seek peace, harmony and
+                  cooperation—and to do it with style and grace.
+                </p>
+              </label>
+            </div>
+
+            <div class="pluto mars water pig">
+              <input type="radio" name="zodaics" id="control_08" value="scorpio" />
+              <label for="control_08">
+                <h2>Scorpio <span class="zTitle">The Scorpion</span></h2>
+                <h3>(Oct 23-Nov 21)</h3>
+                <img src="https://numeroly.com/wp-content/uploads/2020/05/Scorpio55.gif" alt="" />
+                <p>
+                  The most intense and focused of the horoscope signs, Scorpio energy helps us dive deep, merge our
+                  superpowers and form bonds that are built to last.
+                </p>
+              </label>
+            </div>
+
+            <div class="jupiter fire rat">
+              <input type="radio" name="zodaics" id="control_09" value="segittarius" />
+              <label for="control_09">
+                <h2>Sagittarius <span class="zTitle">The Archer</span></h2>
+                <h3>(Nov 22-Dec 21)</h3>
+                <img src="https://numeroly.com/wp-content/uploads/2020/05/Sagittarius55.gif" alt="" />
+                <p>
+                  The worldly adventurer of the horoscope wheel, Sagittarius energy inspires us to dream big, chase the
+                  impossible and take fearless risks.
+                </p>
+              </label>
+            </div>
+
+            <div class="saturn land ox">
+              <input type="radio" name="zodaics" id="control_10" value="capricorn" />
+              <label for="control_10">
+                <h2>Capricorn <span class="zTitle">The Goat</span></h2>
+                <h3>(Dec 22-Jan 19)</h3>
+                <img src="https://numeroly.com/wp-content/uploads/2020/05/Capricorn55.gif" alt="" />
+                <p>
+                  The measured master planner of the horoscope family, Capricorn energy teaches us the power of
+                  structure and long-term goals.
+                </p>
+              </label>
+            </div>
+
+            <div class="uranus saturn air tiger">
+              <input type="radio" name="zodaics" id="control_11" value="aquarius" />
+              <label for="control_11">
+                <h2>Aquarius <span class="zTitle">The Water</span></h2>
+                <h3>(Jan 20-Feb 18)</h3>
+                <img src="https://numeroly.com/wp-content/uploads/2020/05/Aquarius55.gif" alt="" />
+                <p>
+                  The mad scientist and humanitarian of the horoscope wheel, futuristic Aquarius energy helps us
+                  innovate and unite for social justice.
+                </p>
+              </label>
+            </div>
+
+            <div class="neptuno jupiter water rabbit">
+              <input type="radio" name="zodaics" id="control_12" value="piscus" />
+              <label for="control_12">
+                <h2>Piscus <span class="zTitle">The Fish</span></h2>
+                <h3>(Feb 19-Mar 20)</h3>
+                <img src="https://numeroly.com/wp-content/uploads/2020/05/Pisces55.gif" alt="" />
+                <p>
+                  The dreamer and healer of the horoscope family, Pisces energy awakens compassion, imagination and
+                  artistry, uniting us as one.
+                </p>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label for="comment">Comment:</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+          </div>
+          <input type="submit" value="Submit" id="submit" />
+        </form>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
