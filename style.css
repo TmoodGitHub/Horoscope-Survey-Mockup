@@ -104,12 +104,12 @@ input[type='submit']:hover {
   border: none;
 }
 
-#age .zodaic {
+#age .zodiac {
   flex: 1;
   padding: 1.5rem;
 }
 
-.zodaic #zodaic {
+.zodiac #zodiac {
   background: white;
   height: 6rem;
   border-radius: 0.1rem;
@@ -126,11 +126,11 @@ input[type='submit']:hover {
   display: none;
 }
 
-#zodaicSigns {
+#zodiacSigns {
   text-align: center;
 }
 
-#zodaicSigns div {
+#zodiacSigns div {
   display: inline-block;
   vertical-align: top;
   height: 380px;
@@ -139,16 +139,16 @@ input[type='submit']:hover {
   width: 49%;
 }
 
-#zodaicSigns input[type='radio'],
+#zodiacSigns input[type='radio'],
 .hidden {
   display: none;
 }
 
-#zodaicSigns input[type='radio']:not(:disabled) ~ label {
+#zodiacSigns input[type='radio']:not(:disabled) ~ label {
   cursor: pointer;
 }
 
-#zodaicSigns label {
+#zodiacSigns label {
   display: block;
   height: 100%;
   background: white;
@@ -161,18 +161,18 @@ input[type='submit']:hover {
   position: relative;
 }
 
-#zodaicSigns label:hover {
+#zodiacSigns label:hover {
   background-color: #8b8c8f;
   color: white;
   transition: 0.4s;
 }
 
-#zodaicSigns input[type='radio']:checked + label {
+#zodiacSigns input[type='radio']:checked + label {
   background: rgb(63, 2, 63);
   color: white;
 }
 
-#zodaicSigns input[type='radio']:checked + label::after {
+#zodiacSigns input[type='radio']:checked + label::after {
   color: rgb(63, 2, 63);
   font-family: FontAwesome;
   border: 2px solid black;
@@ -190,11 +190,11 @@ input[type='submit']:hover {
   background: white;
 }
 
-#filterZodaics {
+#filterzodiacs {
   padding: 1rem 0 2rem 0;
 }
 
-#filterZodaics .cbx {
+#filterzodiacs .cbx {
   position: relative;
   display: inline-block;
   top: 1px;
@@ -207,7 +207,7 @@ input[type='submit']:hover {
   cursor: pointer;
 }
 
-#filterZodaics .cbx:after {
+#filterzodiacs .cbx:after {
   content: '';
   position: absolute;
   top: 1px;
@@ -221,92 +221,92 @@ input[type='submit']:hover {
   transition: all 0.3s ease;
   transition-delay: 0.15s;
 }
-#filterZodaics .lbl {
+#filterzodiacs .lbl {
   margin-left: 5px;
   vertical-align: middle;
   cursor: pointer;
 }
 
-#filterZodaics #planets div,
-#filterZodaics #elements div,
-#filterZodaics #chinese div {
+#filterzodiacs #planets div,
+#filterzodiacs #elements div,
+#filterzodiacs #chinese div {
   display: inline-block;
   width: 10rem;
   padding: 0.2rem 0;
 }
 
-#filterZodaics #sun:checked ~ .cbx,
-#filterZodaics #mercury:checked ~ .cbx,
-#filterZodaics #venus:checked ~ .cbx,
-#filterZodaics #earth:checked ~ .cbx,
-#filterZodaics #moon:checked ~ .cbx,
-#filterZodaics #mars:checked ~ .cbx,
-#filterZodaics #jupiter:checked ~ .cbx,
-#filterZodaics #saturn:checked ~ .cbx,
-#filterZodaics #neptuno:checked ~ .cbx,
-#filterZodaics #uranus:checked ~ .cbx,
-#filterZodaics #pluto:checked ~ .cbx {
+#filterzodiacs #sun:checked ~ .cbx,
+#filterzodiacs #mercury:checked ~ .cbx,
+#filterzodiacs #venus:checked ~ .cbx,
+#filterzodiacs #earth:checked ~ .cbx,
+#filterzodiacs #moon:checked ~ .cbx,
+#filterzodiacs #mars:checked ~ .cbx,
+#filterzodiacs #jupiter:checked ~ .cbx,
+#filterzodiacs #saturn:checked ~ .cbx,
+#filterzodiacs #neptuno:checked ~ .cbx,
+#filterzodiacs #uranus:checked ~ .cbx,
+#filterzodiacs #pluto:checked ~ .cbx {
   background: rgb(63, 2, 63);
   animation: jelly 0.6s ease;
 }
 
-#filterZodaics #dragon:checked ~ .cbx,
-#filterZodaics #snake:checked ~ .cbx,
-#filterZodaics #horse:checked ~ .cbx,
-#filterZodaics #goat:checked ~ .cbx,
-#filterZodaics #monkey:checked ~ .cbx,
-#filterZodaics #dog:checked ~ .cbx,
-#filterZodaics #pig:checked ~ .cbx,
-#filterZodaics #rat:checked ~ .cbx,
-#filterZodaics #ox:checked ~ .cbx,
-#filterZodaics #tiger:checked ~ .cbx,
-#filterZodaics #rabbit:checked ~ .cbx {
+#filterzodiacs #dragon:checked ~ .cbx,
+#filterzodiacs #snake:checked ~ .cbx,
+#filterzodiacs #horse:checked ~ .cbx,
+#filterzodiacs #goat:checked ~ .cbx,
+#filterzodiacs #monkey:checked ~ .cbx,
+#filterzodiacs #dog:checked ~ .cbx,
+#filterzodiacs #pig:checked ~ .cbx,
+#filterzodiacs #rat:checked ~ .cbx,
+#filterzodiacs #ox:checked ~ .cbx,
+#filterzodiacs #tiger:checked ~ .cbx,
+#filterzodiacs #rabbit:checked ~ .cbx {
   background: rgb(63, 2, 63);
   animation: jelly 0.6s ease;
 }
 
-#filterZodaics #air:checked ~ .cbx,
-#filterZodaics #fire:checked ~ .cbx,
-#filterZodaics #land:checked ~ .cbx,
-#filterZodaics #water:checked ~ .cbx {
+#filterzodiacs #air:checked ~ .cbx,
+#filterzodiacs #fire:checked ~ .cbx,
+#filterzodiacs #land:checked ~ .cbx,
+#filterzodiacs #water:checked ~ .cbx {
   background: rgb(63, 2, 63);
   animation: jelly 0.6s ease;
 }
 
-#filterZodaics #sun:checked ~ .cbx:after,
-#filterZodaics #mercury:checked ~ .cbx:after,
-#filterZodaics #venus:checked ~ .cbx:after,
-#filterZodaics #earth:checked ~ .cbx:after,
-#filterZodaics #moon:checked ~ .cbx:after,
-#filterZodaics #mars:checked ~ .cbx:after,
-#filterZodaics #jupiter:checked ~ .cbx:after,
-#filterZodaics #saturn:checked ~ .cbx:after,
-#filterZodaics #neptuno:checked ~ .cbx:after,
-#filterZodaics #uranus:checked ~ .cbx:after,
-#filterZodaics #pluto:checked ~ .cbx:after {
+#filterzodiacs #sun:checked ~ .cbx:after,
+#filterzodiacs #mercury:checked ~ .cbx:after,
+#filterzodiacs #venus:checked ~ .cbx:after,
+#filterzodiacs #earth:checked ~ .cbx:after,
+#filterzodiacs #moon:checked ~ .cbx:after,
+#filterzodiacs #mars:checked ~ .cbx:after,
+#filterzodiacs #jupiter:checked ~ .cbx:after,
+#filterzodiacs #saturn:checked ~ .cbx:after,
+#filterzodiacs #neptuno:checked ~ .cbx:after,
+#filterzodiacs #uranus:checked ~ .cbx:after,
+#filterzodiacs #pluto:checked ~ .cbx:after {
   opacity: 1;
   transform: rotate(45deg) scale(1);
 }
 
-#filterZodaics #dragon:checked ~ .cbx:after,
-#filterZodaics #snake:checked ~ .cbx:after,
-#filterZodaics #horse:checked ~ .cbx:after,
-#filterZodaics #goat:checked ~ .cbx:after,
-#filterZodaics #monkey:checked ~ .cbx:after,
-#filterZodaics #dog:checked ~ .cbx:after,
-#filterZodaics #pig:checked ~ .cbx:after,
-#filterZodaics #rat:checked ~ .cbx:after,
-#filterZodaics #ox:checked ~ .cbx:after,
-#filterZodaics #tiger:checked ~ .cbx:after,
-#filterZodaics #rabbit:checked ~ .cbx:after {
+#filterzodiacs #dragon:checked ~ .cbx:after,
+#filterzodiacs #snake:checked ~ .cbx:after,
+#filterzodiacs #horse:checked ~ .cbx:after,
+#filterzodiacs #goat:checked ~ .cbx:after,
+#filterzodiacs #monkey:checked ~ .cbx:after,
+#filterzodiacs #dog:checked ~ .cbx:after,
+#filterzodiacs #pig:checked ~ .cbx:after,
+#filterzodiacs #rat:checked ~ .cbx:after,
+#filterzodiacs #ox:checked ~ .cbx:after,
+#filterzodiacs #tiger:checked ~ .cbx:after,
+#filterzodiacs #rabbit:checked ~ .cbx:after {
   opacity: 1;
   transform: rotate(45deg) scale(1);
 }
 
-#filterZodaics #air:checked ~ .cbx:after,
-#filterZodaics #fire:checked ~ .cbx:after,
-#filterZodaics #land:checked ~ .cbx:after,
-#filterZodaics #water:checked ~ .cbx:after {
+#filterzodiacs #air:checked ~ .cbx:after,
+#filterzodiacs #fire:checked ~ .cbx:after,
+#filterzodiacs #land:checked ~ .cbx:after,
+#filterzodiacs #water:checked ~ .cbx:after {
   opacity: 1;
   transform: rotate(45deg) scale(1);
 }

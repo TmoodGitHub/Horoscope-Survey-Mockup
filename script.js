@@ -9,9 +9,9 @@ document.addEventListener('change', (e) => {
     const ageBox = document.querySelector('#number');
     ageBox.value = determineAge(birthDate);
 
-    const zodaicBox = document.querySelector('#zodaic');
-    zodaicBox.innerHTML = determineZodaic(month, day);
-    console.log(determineZodaic(month, day));
+    const zodiacBox = document.querySelector('#zodiac');
+    zodiacBox.innerHTML = determineZodiac(month, day);
+    console.log(determineZodiac(month, day));
   }
 
   if (e.target.name === 'dropdown') {
@@ -31,8 +31,8 @@ document.addEventListener('change', (e) => {
   }
 
   if (e.target.value === 'select one') {
-    const zodaicList = document.querySelectorAll('#zodaicSigns div');
-    for (let item of zodaicList) {
+    const zodiacList = document.querySelectorAll('#zodiacSigns div');
+    for (let item of zodiacList) {
       item.classList.remove('hide');
     }
   }
@@ -49,13 +49,13 @@ const convertNodeToArr = (nodeList) => {
 };
 
 const filterTheList = (selectionArr) => {
-  const zodaicList = document.querySelectorAll('#zodaicSigns div');
+  const zodiacList = document.querySelectorAll('#zodiacSigns div');
 
-  for (let item of zodaicList) {
+  for (let item of zodiacList) {
     item.classList.add('hide');
   }
 
-  for (let item of zodaicList) {
+  for (let item of zodiacList) {
     let classArr = [...item.classList];
 
     selectionArr.map((match) => {
@@ -66,7 +66,7 @@ const filterTheList = (selectionArr) => {
   }
 
   if (selectionArr.length === 0) {
-    for (let item of zodaicList) {
+    for (let item of zodiacList) {
       item.classList.remove('hide');
     }
   }
@@ -96,84 +96,84 @@ const filterOptions = (target) => {
   }
 };
 
-const determineZodaic = (month, day) => {
-  let zodaic = '';
+const determineZodiac = (month, day) => {
+  let zodiac = '';
 
   if (month === 11) {
     if (day < 22) {
-      zodaic = 'Sagittarius';
+      zodiac = 'Sagittarius';
     } else {
-      zodaic = 'Capricorn';
+      zodiac = 'Capricorn';
     }
   } else if (month === 0) {
     if (day < 20) {
-      zodaic = 'Capricorn';
+      zodiac = 'Capricorn';
     } else {
-      zodaic = 'Aquarius';
+      zodiac = 'Aquarius';
     }
   } else if (month === 1) {
     if (day < 19) {
-      zodaic = 'Aquarius';
+      zodiac = 'Aquarius';
     } else {
-      zodaic = 'Pisces';
+      zodiac = 'Pisces';
     }
   } else if (month === 2) {
     if (day < 21) {
-      zodaic = 'Pisces';
+      zodiac = 'Pisces';
     } else {
-      zodaic = 'Aries';
+      zodiac = 'Aries';
     }
   } else if (month === 3) {
     if (day < 20) {
-      zodaic = 'Aries';
+      zodiac = 'Aries';
     } else {
-      zodaic = 'Tarus';
+      zodiac = 'Tarus';
     }
   } else if (month === 4) {
     if (day < 21) {
-      zodaic = 'Tarus';
+      zodiac = 'Tarus';
     } else {
-      zodaic = 'Gemini';
+      zodiac = 'Gemini';
     }
   } else if (month === 5) {
     if (day < 21) {
-      zodaic = 'Gemini';
+      zodiac = 'Gemini';
     } else {
-      zodaic = 'Cancer';
+      zodiac = 'Cancer';
     }
   } else if (month === 6) {
     if (day < 23) {
-      zodaic = 'Cancer';
+      zodiac = 'Cancer';
     } else {
-      zodaic = 'Leo';
+      zodiac = 'Leo';
     }
   } else if (month === 7) {
     if (day < 23) {
-      zodaic = 'Leo';
+      zodiac = 'Leo';
     } else {
-      zodaic = 'Virgo';
+      zodiac = 'Virgo';
     }
   } else if (month === 8) {
     if (day < 23) {
-      zodaic = 'Virgo';
+      zodiac = 'Virgo';
     } else {
-      zodaic = 'Libra';
+      zodiac = 'Libra';
     }
   } else if (month === 9) {
     if (day < 23) {
-      zodaic = 'Libra';
+      zodiac = 'Libra';
     } else {
-      zodaic = 'Scorpio';
+      zodiac = 'Scorpio';
     }
   } else if (month === 10) {
     if (day < 22) {
-      zodaic = 'Scorpio';
+      zodiac = 'Scorpio';
     } else {
-      zodaic = 'Sagittarius';
+      zodiac = 'Sagittarius';
     }
   }
 
-  return zodaic;
+  return zodiac;
 };
 
 const determineAge = (date) => {
